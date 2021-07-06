@@ -11,15 +11,16 @@ pipeline {
             }
         }
 
-       
+        stage ('Testing Stage') {
 
-
-        stage ('Deployment Stage') {
             steps {
                 withGradle {
-                    sh 'gradle deploy'
+                    sh 'gradle test --debug'
                 }
             }
         }
+
+
+        
     }
 }
