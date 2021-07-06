@@ -20,14 +20,7 @@ pipeline {
             }
         }
 
-        stage ('Deployment Stage') {
-
-            steps {
-                withGradle {
-                    sh 'gradle deploy'
-                }
-            }
-        }
+    
 
         
     }
