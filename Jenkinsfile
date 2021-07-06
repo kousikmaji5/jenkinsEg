@@ -6,7 +6,7 @@ pipeline {
 
             steps {
                 withGradle {
-                    sh './gradlew build'
+                    sh 'gradle build'
                 }
             }
         }
