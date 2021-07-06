@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 withGradle {
-                    sh 'gradle test'
+                    sh 'gradle test --debug'
                 }
             }
         }
