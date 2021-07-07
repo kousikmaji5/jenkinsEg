@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('Compile Stage') {
+        stage ('Project 1 Stage 1') {
 
             steps {
                 withGradle {
@@ -11,7 +11,7 @@ pipeline {
             }
         }
 
-        stage ('Testing Stage') {
+        stage ('Project 1 Stage 2') {
 
             steps {
                 withGradle {
