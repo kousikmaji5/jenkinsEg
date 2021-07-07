@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage ('New Stage') {
+        stage ('Project 2 Stage 1') {
 
             steps {
                 withGradle {
