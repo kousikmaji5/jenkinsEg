@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage ('New Stage') {
+
+            steps {
+                withGradle {
+                    sh 'gradle build'
+                }
+            }
+        }
+
+            
+
+        
+    }
+}
